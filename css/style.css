@@ -5,7 +5,9 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Sarabun', sans-serif;
 }
-
+p { 
+    font-family: 'Lora', 'Sarabun', sans-serif;
+}
 .navbar { 
     min-height: 65px;
 }
@@ -17,8 +19,33 @@ body {
 }
 
 
+.ar__container  { 
+    margin-top: 30px;
+}
+.ar__entry-header { 
+    max-width: 720px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-.ar__header { 
+.ar__entry-header .date { 
+    font-weight: 600;
+    font-size: 15px;
+    color: #797979;
+    margin-top: 10px;
+} 
+.ar__header-imgwrapper { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ar__header-img { 
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+/* .ar__header { 
     background: black;
     color: white;
     position: relative;
@@ -44,13 +71,7 @@ body {
     width: 100px;
     border-top: 5px solid white;
 }
-
-.ar__entry-header .date { 
-    font-weight: 600;
-    font-size: 15px;
-    color: #e4e4e4;
-    margin-top: 10px;
-}
+*/
 
 .title { 
     font-family: "Poppins";
@@ -79,6 +100,8 @@ body {
 .ar__content-wrap { 
     max-width: 720px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .ar__content-wrap p { 
@@ -151,6 +174,10 @@ footer span{
     top: 10px;
     z-index: 1;
 }
+
+.post .text { 
+    margin-bottom: 20px;
+}
 .post .title { 
     font-size: 20px;
     margin-top: 15px;
@@ -202,3 +229,66 @@ a:hover  article .text .title{
 .btn__pill { 
     border-radius: 50px; padding-left: 20px; padding-right: 20px;
 }
+
+/* upload */
+.dropzone.dz-clickable {
+    cursor: pointer;
+}
+
+.m-dropzone {
+    border: 2px dashed #ebedf2;
+}
+.m-dropzone {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.dropzone {
+    min-height: 150px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background: white;
+    padding: 20px 20px;
+}
+.dropzone.dz-clickable .dz-message, .dropzone.dz-clickable .dz-message * {
+    cursor: pointer;
+}
+.dropzone .dz-message {
+    text-align: center;
+    margin: 2em 0;
+}
+.dropzone.dz-clickable * {
+    cursor: default;
+}
+.m-dropzone .m-dropzone__msg-title {
+    color: #575962;
+}
+.m-dropzone .m-dropzone__msg-title {
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+.m-dropzone .m-dropzone__msg-desc {
+    color: #6f727d;
+}
+.m-dropzone .m-dropzone__msg-desc {
+    font-size: 0.85rem;
+}
+
+.post__wrapper .col-sm {
+    flex-grow: 1;
+}
+
+
+@media only screen and (max-width: 767px) {
+        
+    .post__first .text { 
+        margin-top: 20px;
+        padding: 0;
+    }
+  }
