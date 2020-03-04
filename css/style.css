@@ -306,3 +306,11 @@ a:hover article .text .title {
     padding-right: 20px;
     margin-right:10px ;
 }
+
+.input-group.date input{ 
+    border-right: 0;
+}
+.input-group-addon { 
+    background: white;
+    color: #797979;
+}
